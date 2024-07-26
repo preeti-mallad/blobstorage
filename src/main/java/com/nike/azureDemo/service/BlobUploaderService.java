@@ -44,7 +44,7 @@ String connectStr = "DefaultEndpointsProtocol=https;AccountName=nikepreeti;Accou
         // Create the ./data/ directory and a file for uploading and downloading
         String localPath = "./data/";
         new File(localPath).mkdirs();
-        String fileName = "quickstart" +java.util.UUID.randomUUID()+ ".txt";
+        String fileName = "quickstart" +Math.random()+ ".txt";
 
 // Get a reference to a blob
         BlobClient blobClient = blobContainerClient.getBlobClient(fileName);
