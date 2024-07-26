@@ -77,23 +77,23 @@ for (BlobItem blobItem : blobContainerClient.listBlobs()) {
 // Download the blob to a local file
 
 // Append the string "DOWNLOAD" before the .txt extension for comparison purposes
-String downloadFileName = fileName.replace(".txt", "DOWNLOAD.txt");
+// String downloadedFileName = fileName.replace(".txt", "DOWNLOAD.txt");
 
-System.out.println("\nDownloading blob to\n\t " + localPath + downloadFileName);
+// System.out.println("\nDownloading blob to\n\t " + localPath + downloadFileName);
 
-System.out.println("\nPress the Enter key to begin clean up");
-System.console().readLine();
+// System.out.println("\nPress the Enter key to begin clean up");
+// System.console().readLine();
 
-System.out.println("Deleting blob container...");
-blobContainerClient.delete();
+// System.out.println("Deleting blob container...");
+// blobContainerClient.delete();
 
-System.out.println("Deleting the local source and downloaded files...");
-localFile.delete();
-downloadedFile.delete();
+// System.out.println("Deleting the local source and downloaded files...");
+// localFile.delete();
+// downloadedFile.delete();
 
-System.out.println("Done");
+// System.out.println("Done");
 
-blobClient.downloadToFile(localPath + downloadFileName);
+// blobClient.downloadToFile(localPath + downloadFileName);
         return "success";
     }
 }
