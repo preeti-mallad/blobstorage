@@ -26,8 +26,8 @@ public class BlobUploaderService {
 
 // Azure SDK client builders accept the credential as a parameter
 // TODO: Replace <storage-account-name> with your actual storage account name
-//String connectStr = "DefaultEndpointsProtocol=https;AccountName=nikepreeti;AccountKey=svqE0aJQhD2mg595t7Nj+3YV0T6ki1x8mcSjZvK2dVge09kpZhE+xA+JRg5QDeAJwWBbwdjC7Gv4+AStxR9x0A==;EndpointSuffix=core.windows.net";
-String connectStr = "DefaultEndpointsProtocol=https;AccountName=nikedemosa;AccountKey=du1MxdU2TONTmdmoflzz0rAyFqjeINyoMkwh4S+cQtF/8VdElhB1550u2DIk5UZdQtAJ8ClBknUb+AStBg3L+g==;EndpointSuffix=core.windows.net";
+String connectStr = "DefaultEndpointsProtocol=https;AccountName=nikepreeti;AccountKey=svqE0aJQhD2mg595t7Nj+3YV0T6ki1x8mcSjZvK2dVge09kpZhE+xA+JRg5QDeAJwWBbwdjC7Gv4+AStxR9x0A==;EndpointSuffix=core.windows.net";
+//String connectStr = "DefaultEndpointsProtocol=https;AccountName=nikedemosa;AccountKey=du1MxdU2TONTmdmoflzz0rAyFqjeINyoMkwh4S+cQtF/8VdElhB1550u2DIk5UZdQtAJ8ClBknUb+AStBg3L+g==;EndpointSuffix=core.windows.net";
         // BlobServiceClient blobServiceClient = new BlobServiceClientBuilder()
         //         .endpoint("https://nikepreeti.blob.core.windows.net/")
         //         .credential(defaultCredential)
