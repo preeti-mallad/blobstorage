@@ -44,7 +44,7 @@ String connectStr = "DefaultEndpointsProtocol=https;AccountName=nikepreeti;Accou
         // Create the ./data/ directory and a file for uploading and downloading
         String localPath = "./data/";
         new File(localPath).mkdirs();
-        String fileName = "quickstart" + ".txt";
+        String fileName = "quickstart" +java.util.UUID.randomUUID()+ ".txt";
 
 // Get a reference to a blob
         BlobClient blobClient = blobContainerClient.getBlobClient(fileName);
@@ -81,17 +81,17 @@ String downloadFileName = fileName.replace(".txt", "DOWNLOAD.txt");
 
 System.out.println("\nDownloading blob to\n\t " + localPath + downloadFileName);
 
-// System.out.println("\nPress the Enter key to begin clean up");
-// System.console().readLine();
+System.out.println("\nPress the Enter key to begin clean up");
+System.console().readLine();
 
-// System.out.println("Deleting blob container...");
-// blobContainerClient.delete();
+System.out.println("Deleting blob container...");
+blobContainerClient.delete();
 
-// System.out.println("Deleting the local source and downloaded files...");
-// localFile.delete();
-// downloadedFile.delete();
+System.out.println("Deleting the local source and downloaded files...");
+localFile.delete();
+downloadedFile.delete();
 
-// System.out.println("Done");
+System.out.println("Done");
 
 blobClient.downloadToFile(localPath + downloadFileName);
         return "success";
