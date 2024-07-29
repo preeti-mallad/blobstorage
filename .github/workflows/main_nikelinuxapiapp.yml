@@ -51,4 +51,4 @@ jobs:
           app-name: 'nikelinuxapiapp'
           slot-name: 'Production'
           package: '*.jar'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_050BD5B9F7704315A0F76A62C4A737FC }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_E5395CAFC3574854964D3237C2004D83 }}
